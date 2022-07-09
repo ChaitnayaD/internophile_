@@ -34,7 +34,7 @@ const Navbar = (props) => {
     <AppBar position="fixed" style={{ background: "#2E3B55" }}>
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          Internophile - <Typography variant="h8"> by Chaitanya</Typography>
+          Internophile - <Typography variant="h10"> by Chaitanya</Typography>
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (
