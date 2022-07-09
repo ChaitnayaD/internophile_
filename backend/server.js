@@ -45,6 +45,7 @@ app.use("/api", require("./routes/apiRoutes"));
 app.use("/upload", require("./routes/uploadRoutes"));
 app.use("/host", require("./routes/downloadRoutes"));
 
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT || port, (req, res) => {
   console.log(`Server started on port ${port}!`);
+  res.send("Server Running");
 });
