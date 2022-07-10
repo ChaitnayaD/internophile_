@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const passportConfig = require("./lib/passportConfig");
 const cors = require("cors");
 const fs = require("fs");
-require("dotenv").config();
+require("dotenv").config;
 // MongoDB
 mongoose
   .connect(
@@ -47,5 +47,4 @@ app.use("/host", require("./routes/downloadRoutes"));
 
 app.listen(process.env.PORT || port, (req, res) => {
   console.log(`Server started on port ${port}!`);
-  res.send("Server Running");
 });
